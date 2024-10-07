@@ -19,7 +19,7 @@ conf = 0.4
 iou = 0.7
 
 # Инициализация, указываем путь к видео
-cap = cv2.VideoCapture('video_street_bus.mp4')
+cap = cv2.VideoCapture('видео')
 
 # Усредняем FPS
 fps_counter = FPS_counter(calc_time_perion_N_frames=10)
@@ -72,7 +72,7 @@ while True:
     frame_resized = show_fps(frame_resized, fps_counter)
 
     # Отображение кадра
-    cv2.imshow('video_street_bus', frame_resized)
+    cv2.imshow('видео', frame_resized)
 
     # Запись/сохранение в выходной видеофайл (без FPS и ресайза)
     out.write(frame)
